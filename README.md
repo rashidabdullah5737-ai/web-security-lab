@@ -1,167 +1,247 @@
-# web-security-lab
-A hands-on web security training lab built with Flask and SQLite for practicing vulnerability assessment, security testing, and remediation techniques.
+<div align="center">
 
+<img src="assets/banner.gif" width="100%" alt="Web Security Labs Banner"/>
+
+# 🛡️ Web Security Labs
+
+### **Professional Web Application Security Portfolio**
+
+**Burp Suite • OWASP Top 10 • SQL Injection • SQLMap • HTTP Security • Report Writing**
+
+<p>
+
+<img src="https://img.shields.io/badge/Kali-Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Burp-Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/OWASP-Top%2010-000000?style=for-the-badge&logo=owasp"/>
+
+<img src="https://img.shields.io/badge/Web-Security-red?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Penetration-Testing-blue?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Vulnerability-Assessment-success?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/SQLMap-Automation-green?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/HTTP-Protocol-orange?style=for-the-badge"/>
+
+</p>
+
+---
+
+## ⚡ Overview
+
+This repository documents my **hands-on journey into Web Application Security** through practical labs, vulnerability assessments, exploitation, mitigation techniques, and professional security reporting.
+
+The objective is not only to discover vulnerabilities but also to understand their root cause, business impact, and remediation following industry best practices.
+
+---
+
+# 🎯 Learning Objectives
+
+✔ Web Application Penetration Testing
+
+✔ Vulnerability Assessment
+
+✔ Manual Testing
+
+✔ Automated Testing
+
+✔ Security Report Writing
+
+✔ Burp Suite Workflow
+
+✔ HTTP Protocol Analysis
+
+✔ OWASP Top 10
+
+✔ Professional Documentation
+
+---
+
+# 🧰 Technology Stack
+
+| Security   | Development |
+| ---------- | ----------- |
+| Burp Suite | Git         |
+| SQLMap     | GitHub      |
+| Nmap       | Bash        |
+| FFUF       | Python      |
+| HTTPie     | Markdown    |
+| Curl       | Docker      |
+| Gobuster   | Linux       |
+| WhatWeb    | VS Code     |
+
+---
+
+# 🧪 Lab Roadmap
+
+```text
+HTTP Fundamentals
+        │
+        ▼
+Intercepting Requests
+        │
+        ▼
+Burp Suite Proxy
+        │
+        ▼
+Repeater
+        │
+        ▼
+HTTP Security Headers
+        │
+        ▼
+Authentication Testing
+        │
+        ▼
+SQL Injection
+        │
+        ▼
+SQLMap Automation
+        │
+        ▼
+Cross Site Scripting
+        │
+        ▼
+IDOR
+        │
+        ▼
+File Upload Testing
+        │
+        ▼
+Professional Report Writing
+```
+
+---
+
+# 📂 Repository Structure
+
+```text
 web-security-labs/
-│
-├── README.md
-├── LICENSE
-├── CONTRIBUTING.md
-├── SECURITY.md
-├── .gitignore
-│
+
 ├── assets/
-│   ├── images/
+│   ├── banner/
 │   ├── screenshots/
-│   └── diagrams/
-│
-├── reports/
-│   ├── SQL-Injection-Lab.pdf
-│   ├── Missing-Headers-Lab.pdf
-│   ├── BurpSuite-Lab.pdf
-│   └── SQLMap-Lab.pdf
+│   ├── diagrams/
+│   └── gifs/
 │
 ├── labs/
-│   ├── 01-http-basics/
+│   ├── 01-http-fundamentals/
 │   ├── 02-burp-suite/
 │   ├── 03-http-security-headers/
-│   ├── 04-sql-injection/
-│   ├── 05-sqlmap/
-│   ├── 06-xss/
-│   ├── 07-idor/
-│   ├── 08-file-upload/
-│   ├── 09-authentication/
+│   ├── 04-authentication/
+│   ├── 05-sql-injection/
+│   ├── 06-sqlmap/
+│   ├── 07-xss/
+│   ├── 08-idor/
+│   ├── 09-file-upload/
 │   └── 10-report-writing/
 │
-├── tools/
-│   ├── BurpSuite.md
-│   ├── SQLMap.md
-│   ├── Nmap.md
-│   ├── HTTPie.md
-│   ├── Curl.md
-│   └── FFUF.md
+├── reports/
 │
 ├── notes/
-│   ├── methodology.md
-│   ├── checklist.md
-│   └── cheat-sheet.md
 │
-└── scripts/
-Professional README.md
-🛡️ Web Security Labs
-A professional collection of hands-on Web Application Security labs, penetration testing exercises, vulnerability assessment reports, and remediation guides.
-📖 About
-This repository documents my journey in Web Application Security through practical labs and vulnerability assessments.
-The goal is to learn, document, and practice secure web application testing while following responsible disclosure and ethical hacking principles.
-Every lab includes:
-Objective
-Lab Setup
-Methodology
-Commands
-Screenshots
-Findings
-Risk Analysis
-Remediation
-References
-📚 Topics Covered
-✅ HTTP Protocol
-✅ HTTPS
-✅ Burp Suite
-✅ Repeater
-✅ Intruder
-✅ Proxy
-✅ SQL Injection
-✅ SQLMap
-✅ Cross-Site Scripting (XSS)
-✅ IDOR
-✅ File Upload
-✅ Authentication Testing
-✅ HTTP Security Headers
-✅ Cookie Security
-✅ Information Disclosure
-✅ Report Writing
-🛠️ Tools
-Burp Suite Community
-SQLMap
-Nmap
-HTTPie
-Curl
-FFUF
-Gobuster
-WhatWeb
-Wappalyzer
-Firefox Developer Tools
-Kali Linux
-📂 Lab Workflow
-Recon
-↓
-Proxy Request
-↓
-Manual Testing
-↓
-Automated Testing
-↓
-Validate Findings
-↓
-Document Evidence
-↓
-Prepare Professional Report
-↓
-Recommend Fixes
-📑 Report Format
-Every report contains:
-Executive Summary
-Scope
-Methodology
-Target
-Findings
-Risk Rating
-Screenshots
-Proof of Concept
-Impact
-Recommendations
-References
-🎯 Learning Goals
-Master Web Application Security
-Learn OWASP Top 10
-Improve Burp Suite Skills
-Practice SQLMap
-Write Professional Security Reports
-Build a Security Portfolio
-⚠️ Disclaimer
-This repository is created solely for educational purposes and authorized security testing. Do not perform security testing on systems without explicit permission from the owner.
-⭐ Future Labs
-JWT
-XXE
-SSRF
-SSTI
-CSRF
-Race Conditions
-API Testing
-GraphQL Testing
-OAuth Testing
-Cloud Security
-🤝 Contributions
-Pull requests and suggestions are welcome for improving documentation and educational content.
-📜 License
-MIT License
-GitHub Topics
-web-security
-web-security-lab
-burpsuite
-sqlmap
-owasp
-owasp-top10
-penetration-testing
-ethical-hacking
-vulnerability-assessment
-cybersecurity
-web-pentest
-security-research
-kali-linux
-http
-xss
-sqli
-idor
-bug-bounty
-infosec
-security-labs
+├── scripts/
+│
+├── tools/
+│
+├── cheat-sheets/
+│
+├── README.md
+│
+└── LICENSE
+```
+
+---
+
+# 📖 Each Lab Includes
+
+* Objective
+* Scope
+* Environment Setup
+* Methodology
+* Tools Used
+* Commands Executed
+* Screenshots
+* Request & Response Analysis
+* Proof of Concept
+* Risk Rating
+* Business Impact
+* Remediation
+* References
+
+---
+
+# 🔥 Skills Demonstrated
+
+• Web Application Security
+
+• Burp Suite Professional Workflow
+
+• HTTP Request Analysis
+
+• Manual Vulnerability Assessment
+
+• SQL Injection Detection
+
+• SQLMap Automation
+
+• Security Header Analysis
+
+• Authentication Testing
+
+• OWASP Top 10
+
+• Professional Technical Documentation
+
+---
+
+# 📈 Current Progress
+
+| Module           | Status |
+| ---------------- | ------ |
+| HTTP             | ✅      |
+| Burp Suite       | ✅      |
+| Security Headers | ✅      |
+| SQL Injection    | ✅      |
+| SQLMap           | ✅      |
+| XSS              | 🚧     |
+| IDOR             | 🚧     |
+| File Upload      | 🚧     |
+| Authentication   | 🚧     |
+| Report Writing   | 🚀     |
+
+---
+
+# 🚀 Future Labs
+
+* SSRF
+* XXE
+* SSTI
+* CSRF
+* JWT
+* OAuth
+* GraphQL
+* API Security
+* Race Conditions
+* Business Logic Testing
+
+---
+
+# ⚠️ Responsible Disclosure
+
+All exercises in this repository are performed exclusively in authorized lab environments, intentionally vulnerable applications, or systems where explicit permission has been granted.
+
+This repository is intended solely for educational and defensive security purposes.
+
+---
+
+<div align="center">
+
+## ⭐ If you find this project useful, consider giving it a star.
+
+**Building practical skills through ethical hacking, responsible disclosure, and continuous learning.**
+
+</div>
